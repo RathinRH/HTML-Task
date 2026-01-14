@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+        }
+        .options input {
+            width: auto;
+            margin-right: 5px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Feedback Survey</h2>
+
+    <form>
+
+        <!-- Text Input -->
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <!-- Dropdown -->
+        <label for="role">Your Role</label>
+        <select id="role">
+            <option>Select your role</option>
+            <option>Student</option>
+            <option>Professional</option>
+            <option>Other</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>How did you hear about us?</label>
+        <div class="options">
+            <input type="radio" name="source"> Social Media<br>
+            <input type="radio" name="source"> Friends<br>
+            <input type="radio" name="source"> Website
+        </div>
+
+        <!-- Checkboxes -->
+        <label>What features do you like? (Select all that apply)</label>
+        <div class="options">
+            <input type="checkbox"> Design<br>
+            <input type="checkbox"> Performance<br>
+            <input type="checkbox"> Content
+        </div>
+
+        <!-- Rating Scale -->
+        <label>Rate your experience (1–5)</label>
+        <select>
+            <option>1 - Very Poor</option>
+            <option>2 - Poor</option>
+            <option>3 - Average</option>
+            <option>4 - Good</option>
+            <option>5 - Excellent</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="feedback">Additional Feedback</label>
+        <textarea id="feedback" rows="4" placeholder="Write your feedback here..."></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Submit Survey</button>
+
+    </form>
+</div>
+
+</body>
+</html>
